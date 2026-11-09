@@ -1,0 +1,512 @@
+2026-10-29 18:54:48,986 | INFO | __main__ | Бот запускається...
+2026-10-29 18:54:48,986 | INFO | aiogram.dispatcher | Start polling
+2026-10-29 18:54:49,052 | INFO | aiogram.dispatcher | Run polling for bot @Bot1ForMoviebot id=8912260409 - 'BotForMovie'
+2026-10-29 18:55:00,652 | INFO | external | Користувач: do_llis | Повідомлення: ➕ Додати фільм
+2026-10-29 18:55:00,849 | INFO | aiogram.event | Update id=442662644 is handled. Duration 200 ms by bot id=8912260409
+2026-10-29 18:55:03,386 | INFO | aiogram.event | Update id=442662645 is not handled. Duration 0 ms by bot id=8912260409
+2026-10-29 18:55:03,386 | ERROR | aiogram.event | Cause exception while process update id=442662645 by bot id=8912260409
+AttributeError: 'function' object has no attribute 'name'
+Traceback (most recent call last):
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 321, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 284, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 172, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 164, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 192, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Include\external.py", line 15, in wrapper
+    func.name,
+    ^^^^^^^^^
+AttributeError: 'function' object has no attribute 'name'
+2026-10-29 18:55:05,665 | INFO | external | Користувач: do_llis | Повідомлення: Усі фільми
+2026-10-29 18:55:05,742 | INFO | aiogram.event | Update id=442662646 is handled. Duration 79 ms by bot id=8912260409
+2026-10-29 18:55:08,322 | INFO | aiogram.event | Update id=442662647 is not handled. Duration 0 ms by bot id=8912260409
+2026-10-29 18:55:08,322 | ERROR | aiogram.event | Cause exception while process update id=442662647 by bot id=8912260409
+AttributeError: 'function' object has no attribute 'name'
+Traceback (most recent call last):
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 321, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 284, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 172, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 164, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 192, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Include\external.py", line 15, in wrapper
+    func.name,
+    ^^^^^^^^^
+AttributeError: 'function' object has no attribute 'name'
+2026-10-29 18:55:10,313 | INFO | external | Користувач: do_llis | Повідомлення: Додати фільм
+2026-10-29 18:55:10,388 | INFO | aiogram.event | Update id=442662648 is handled. Duration 77 ms by bot id=8912260409
+2026-10-29 18:55:11,421 | INFO | aiogram.event | Update id=442662649 is not handled. Duration 1 ms by bot id=8912260409
+2026-10-29 18:55:11,421 | ERROR | aiogram.event | Cause exception while process update id=442662649 by bot id=8912260409
+AttributeError: 'function' object has no attribute 'name'
+Traceback (most recent call last):
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 321, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 284, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 172, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 164, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 192, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Include\external.py", line 15, in wrapper
+    func.name,
+    ^^^^^^^^^
+AttributeError: 'function' object has no attribute 'name'
+2026-10-29 18:55:15,269 | INFO | aiogram.event | Update id=442662650 is not handled. Duration 2 ms by bot id=8912260409
+2026-10-29 18:55:15,269 | ERROR | aiogram.event | Cause exception while process update id=442662650 by bot id=8912260409
+AttributeError: 'function' object has no attribute 'name'
+Traceback (most recent call last):
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 321, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 284, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 172, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 164, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 192, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Include\external.py", line 15, in wrapper
+    func.name,
+    ^^^^^^^^^
+AttributeError: 'function' object has no attribute 'name'
+2026-10-29 18:55:17,451 | INFO | external | Користувач: do_llis | Повідомлення: Знайти фільм
+2026-10-29 18:55:17,534 | INFO | aiogram.event | Update id=442662651 is handled. Duration 86 ms by bot id=8912260409
+2026-10-29 18:55:19,952 | INFO | external | Користувач: do_llis | Повідомлення: Фільтрувати
+2026-10-29 18:55:20,030 | INFO | aiogram.event | Update id=442662652 is handled. Duration 80 ms by bot id=8912260409
+2026-10-29 18:55:21,657 | INFO | aiogram.event | Update id=442662653 is not handled. Duration 1 ms by bot id=8912260409
+2026-10-29 18:55:21,658 | ERROR | aiogram.event | Cause exception while process update id=442662653 by bot id=8912260409
+AttributeError: 'function' object has no attribute 'name'
+Traceback (most recent call last):
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 321, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 284, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 172, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 164, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 192, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Include\external.py", line 15, in wrapper
+    func.name,
+    ^^^^^^^^^
+AttributeError: 'function' object has no attribute 'name'
+2026-10-29 18:55:27,971 | INFO | aiogram.event | Update id=442662654 is not handled. Duration 0 ms by bot id=8912260409
+2026-10-29 18:55:27,972 | ERROR | aiogram.event | Cause exception while process update id=442662654 by bot id=8912260409
+AttributeError: 'function' object has no attribute 'name'
+Traceback (most recent call last):
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 321, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 284, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 172, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 164, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 192, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\moska\OneDrive\Desktop\Новая папка (3)\.venv\Include\external.py", line 15, in wrapper
+    func.name,
+    ^^^^^^^^^
+AttributeError: 'function' object has no attribute 'name'
+2026-10-29 19:01:36,959 | INFO | aiogram.dispatcher | Polling stopped
+2026-10-29 19:01:36,961 | ERROR | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-10-29 19:01:36,962 | WARNING | aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8912260409)
+2026-10-29 19:01:37,223 | INFO | aiogram.dispatcher | Polling stopped for bot @Bot1ForMoviebot id=8912260409 - 'BotForMovie'
+2026-10-29 19:02:01,538 | INFO | __main__ | Бот запускається...
+2026-10-29 19:02:01,540 | INFO | aiogram.dispatcher | Start polling
+2026-10-29 19:02:01,581 | INFO | aiogram.dispatcher | Run polling for bot @Bot1ForMoviebot id=8912260409 - 'BotForMovie'
+2026-10-29 19:02:28,217 | INFO | external | Користувач: do_llis | Повідомлення: Усі фільми
+2026-10-29 19:02:28,409 | INFO | aiogram.event | Update id=442662655 is handled. Duration 193 ms by bot id=8912260409
+2026-10-29 19:02:31,605 | INFO | external | Виклик функції: start
+2026-10-29 19:02:31,606 | INFO | external | Користувач: do_llis | Повідомлення: /start
+2026-10-29 19:02:32,195 | INFO | external | Функція start виконана успішно
+2026-10-29 19:02:32,195 | INFO | aiogram.event | Update id=442662656 is handled. Duration 590 ms by bot id=8912260409
+2026-10-29 19:02:35,971 | INFO | external | Користувач: do_llis | Повідомлення: Усі фільми
+2026-10-29 19:02:36,108 | INFO | aiogram.event | Update id=442662657 is handled. Duration 139 ms by bot id=8912260409
+2026-10-29 19:02:38,539 | INFO | external | Користувач: do_llis | Повідомлення: Додати фільм
+2026-10-29 19:02:38,614 | INFO | aiogram.event | Update id=442662658 is handled. Duration 77 ms by bot id=8912260409
+2026-10-29 19:02:41,016 | INFO | external | Виклик функції: delete_movie
+2026-10-29 19:02:41,017 | INFO | external | Користувач: do_llis | Повідомлення: Видалити фільм
+2026-10-29 19:02:41,153 | INFO | external | Функція delete_movie виконана успішно
+2026-10-29 19:02:41,154 | INFO | aiogram.event | Update id=442662659 is handled. Duration 139 ms by bot id=8912260409
+2026-10-29 19:02:55,667 | ERROR | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+2026-10-29 19:02:55,686 | WARNING | aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8912260409)
+2026-10-29 19:03:06,973 | INFO | aiogram.dispatcher | Connection established (tryings = 1, bot id = 8912260409)
+2026-10-29 19:04:36,148 | INFO | aiogram.event | Update id=442662660 is handled. Duration 541 ms by bot id=8912260409
+2026-10-29 19:04:40,156 | INFO | external | Виклик функції: rate_movie
+2026-10-29 19:04:40,158 | INFO | external | Користувач: do_llis | Повідомлення: Оцінити фільм
+2026-10-29 19:04:40,326 | INFO | external | Функція rate_movie виконана успішно
+2026-10-29 19:04:40,328 | INFO | aiogram.event | Update id=442662661 is handled. Duration 183 ms by bot id=8912260409
+2026-10-29 19:04:53,064 | INFO | aiogram.event | Update id=442662662 is handled. Duration 209 ms by bot id=8912260409
+2026-10-29 19:04:56,280 | INFO | external | Виклик функції: recommend_movie
+2026-10-29 19:04:56,282 | INFO | external | Користувач: do_llis | Повідомлення: Рекомендація
+2026-10-29 19:04:56,480 | INFO | external | Функція recommend_movie виконана успішно
+2026-10-29 19:04:56,481 | INFO | aiogram.event | Update id=442662663 is handled. Duration 207 ms by bot id=8912260409
+2026-10-29 19:04:58,750 | INFO | external | Виклик функції: edit_movie
+2026-10-29 19:04:58,751 | INFO | external | Користувач: do_llis | Повідомлення: Редагувати фільм
+2026-10-29 19:04:58,917 | INFO | external | Функція edit_movie виконана успішно
+2026-10-29 19:04:58,918 | INFO | aiogram.event | Update id=442662664 is handled. Duration 174 ms by bot id=8912260409
+2026-10-29 19:05:05,010 | INFO | aiogram.event | Update id=442662665 is handled. Duration 175 ms by bot id=8912260409
+2026-10-29 19:05:08,109 | INFO | external | Користувач: do_llis | Повідомлення: Додати фільм
+2026-10-29 19:05:08,257 | INFO | aiogram.event | Update id=442662666 is handled. Duration 158 ms by bot id=8912260409
+2026-10-29 19:19:09,737 | INFO | aiogram.dispatcher | Polling stopped
+2026-10-29 19:19:09,743 | ERROR | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-10-29 19:19:09,745 | WARNING | aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8912260409)
+2026-10-29 19:19:10,012 | INFO | aiogram.dispatcher | Polling stopped for bot @Bot1ForMoviebot id=8912260409 - 'BotForMovie'
+2026-10-29 19:19:19,541 | INFO | __main__ | Бот запускається...
+2026-10-29 19:19:19,543 | INFO | aiogram.dispatcher | Start polling
+2026-10-29 19:19:19,693 | INFO | aiogram.dispatcher | Run polling for bot @Bot1ForMoviebot id=8912260409 - 'BotForMovie'
+2026-10-29 19:21:30,827 | INFO | external | Виклик функції: films
+2026-10-29 19:21:30,829 | INFO | external | Користувач: do_llis | Повідомлення: Усі фільми
+2026-10-29 19:21:31,158 | INFO | external | Функція films виконана успішно
+2026-10-29 19:21:31,159 | INFO | aiogram.event | Update id=442662667 is handled. Duration 334 ms by bot id=8912260409
+2026-10-29 19:21:33,436 | INFO | external | Виклик функції: film_create
+2026-10-29 19:21:33,437 | INFO | external | Користувач: do_llis | Повідомлення: Додати фільм
+2026-10-29 19:21:33,571 | INFO | external | Функція film_create виконана успішно
+2026-10-29 19:21:33,581 | INFO | aiogram.event | Update id=442662668 is handled. Duration 149 ms by bot id=8912260409
+2026-10-29 19:21:44,837 | INFO | aiogram.event | Update id=442662669 is handled. Duration 152 ms by bot id=8912260409
+2026-10-29 19:21:50,620 | INFO | aiogram.event | Update id=442662670 is handled. Duration 179 ms by bot id=8912260409
+2026-10-29 19:21:55,971 | INFO | aiogram.event | Update id=442662671 is handled. Duration 129 ms by bot id=8912260409
+2026-10-29 19:22:01,045 | INFO | aiogram.event | Update id=442662672 is handled. Duration 307 ms by bot id=8912260409
+2026-10-29 19:22:07,524 | INFO | aiogram.event | Update id=442662673 is handled. Duration 162 ms by bot id=8912260409
+2026-10-29 19:22:12,471 | INFO | aiogram.event | Update id=442662674 is handled. Duration 144 ms by bot id=8912260409
+2026-10-29 19:22:27,103 | INFO | aiogram.event | Update id=442662675 is handled. Duration 120 ms by bot id=8912260409
+2026-10-29 19:22:39,312 | INFO | aiogram.event | Update id=442662676 is handled. Duration 130 ms by bot id=8912260409
+2026-10-29 19:22:58,618 | INFO | external | Виклик функції: start
+2026-10-29 19:22:58,619 | INFO | external | Користувач: do_llis | Повідомлення: /start
+2026-10-29 19:22:58,761 | INFO | external | Функція start виконана успішно
+2026-10-29 19:22:58,764 | INFO | aiogram.event | Update id=442662677 is handled. Duration 146 ms by bot id=8912260409
+2026-11-09 21:00:51,066 | INFO | __main__ | Бот запускається...
+2026-11-09 21:00:51,068 | INFO | aiogram.dispatcher | Start polling
+2026-11-09 21:00:51,110 | INFO | aiogram.dispatcher | Run polling for bot @Bot1ForMoviebot id=8912260409 - 'BotForMovie'
+2026-11-09 21:01:25,484 | INFO | external | Виклик функції: film_create
+2026-11-09 21:01:25,485 | INFO | external | Користувач: do_llis | Повідомлення: Додати фільм
+2026-11-09 21:01:25,895 | INFO | external | Функція film_create виконана успішно
+2026-11-09 21:01:25,897 | INFO | aiogram.event | Update id=442662678 is handled. Duration 417 ms by bot id=8912260409
+2026-11-09 21:01:37,125 | INFO | external | Виклик функції: start
+2026-11-09 21:01:37,126 | INFO | external | Користувач: do_llis | Повідомлення: /start
+2026-11-09 21:01:37,220 | INFO | external | Функція start виконана успішно
+2026-11-09 21:01:37,221 | INFO | aiogram.event | Update id=442662679 is handled. Duration 95 ms by bot id=8912260409
+2026-11-09 21:03:42,294 | INFO | external | Виклик функції: film_create
+2026-11-09 21:03:42,296 | INFO | external | Користувач: do_llis | Повідомлення: Додати фільм
+2026-11-09 21:03:42,388 | INFO | external | Функція film_create виконана успішно
+2026-11-09 21:03:42,388 | INFO | aiogram.event | Update id=442662680 is handled. Duration 97 ms by bot id=8912260409
+2026-11-09 21:03:45,563 | INFO | aiogram.event | Update id=442662681 is handled. Duration 101 ms by bot id=8912260409
+2026-11-09 21:03:57,648 | INFO | aiogram.event | Update id=442662682 is handled. Duration 269 ms by bot id=8912260409
+2026-11-09 21:04:00,433 | INFO | aiogram.event | Update id=442662683 is handled. Duration 77 ms by bot id=8912260409
+2026-11-09 21:04:04,244 | INFO | aiogram.event | Update id=442662684 is handled. Duration 70 ms by bot id=8912260409
+2026-11-09 21:04:08,591 | INFO | aiogram.event | Update id=442662685 is handled. Duration 150 ms by bot id=8912260409
+2026-11-09 21:04:12,922 | INFO | aiogram.event | Update id=442662686 is handled. Duration 144 ms by bot id=8912260409
+2026-11-09 21:04:17,729 | INFO | aiogram.event | Update id=442662687 is handled. Duration 109 ms by bot id=8912260409
+2026-11-09 21:04:21,816 | INFO | external | Виклик функції: search_movie
+2026-11-09 21:04:21,816 | INFO | external | Користувач: do_llis | Повідомлення: Знайти фільм
+2026-11-09 21:04:22,019 | INFO | external | Функція search_movie виконана успішно
+2026-11-09 21:04:22,019 | INFO | aiogram.event | Update id=442662688 is handled. Duration 204 ms by bot id=8912260409
+2026-11-09 21:04:29,159 | INFO | aiogram.event | Update id=442662689 is handled. Duration 3043 ms by bot id=8912260409
+2026-11-09 21:04:36,756 | INFO | external | Виклик функції: edit_movie
+2026-11-09 21:04:36,756 | INFO | external | Користувач: do_llis | Повідомлення: Редагувати фільм
+2026-11-09 21:04:36,866 | INFO | external | Функція edit_movie виконана успішно
+2026-11-09 21:04:36,867 | INFO | aiogram.event | Update id=442662690 is handled. Duration 115 ms by bot id=8912260409
+2026-11-09 21:04:41,026 | INFO | aiogram.event | Update id=442662691 is handled. Duration 161 ms by bot id=8912260409
+2026-11-09 21:04:56,324 | INFO | aiogram.event | Update id=442662692 is handled. Duration 100 ms by bot id=8912260409
+2026-11-09 21:05:00,735 | INFO | external | Виклик функції: edit_movie
+2026-11-09 21:05:00,736 | INFO | external | Користувач: do_llis | Повідомлення: Редагувати фільм
+2026-11-09 21:05:00,830 | INFO | external | Функція edit_movie виконана успішно
+2026-11-09 21:05:00,830 | INFO | aiogram.event | Update id=442662693 is handled. Duration 101 ms by bot id=8912260409
+2026-11-09 21:05:08,864 | INFO | external | Виклик функції: filter_movie
+2026-11-09 21:05:08,865 | INFO | external | Користувач: do_llis | Повідомлення: /filter_movies
+2026-11-09 21:05:09,022 | INFO | external | Функція filter_movie виконана успішно
+2026-11-09 21:05:09,023 | INFO | aiogram.event | Update id=442662694 is handled. Duration 160 ms by bot id=8912260409
+2026-11-09 21:05:19,444 | INFO | aiogram.event | Update id=442662695 is handled. Duration 1716 ms by bot id=8912260409
+2026-11-09 21:05:22,704 | INFO | external | Виклик функції: rate_movie
+2026-11-09 21:05:22,704 | INFO | external | Користувач: do_llis | Повідомлення: Оцінити фільм
+2026-11-09 21:05:22,789 | INFO | external | Функція rate_movie виконана успішно
+2026-11-09 21:05:22,789 | INFO | aiogram.event | Update id=442662696 is handled. Duration 89 ms by bot id=8912260409
+2026-11-09 21:05:26,431 | INFO | aiogram.event | Update id=442662697 is handled. Duration 203 ms by bot id=8912260409
+2026-11-09 21:05:49,727 | INFO | external | Виклик функції: start
+2026-11-09 21:05:49,728 | INFO | external | Користувач: do_llis | Повідомлення: /start
+2026-11-09 21:05:49,863 | INFO | external | Функція start виконана успішно
+2026-11-09 21:05:49,864 | INFO | aiogram.event | Update id=442662698 is handled. Duration 136 ms by bot id=8912260409
+2026-11-09 21:06:06,245 | INFO | external | Виклик функції: delete_movie
+2026-11-09 21:06:06,246 | INFO | external | Користувач: do_llis | Повідомлення: Видалити фільм
+2026-11-09 21:06:06,397 | INFO | external | Функція delete_movie виконана успішно
+2026-11-09 21:06:06,397 | INFO | aiogram.event | Update id=442662699 is handled. Duration 156 ms by bot id=8912260409
+2026-11-09 21:06:11,662 | INFO | aiogram.event | Update id=442662700 is handled. Duration 74 ms by bot id=8912260409
+2026-11-09 21:06:49,278 | INFO | external | Виклик функції: start
+2026-11-09 21:06:49,279 | INFO | external | Користувач: do_llis | Повідомлення: /start
+2026-11-09 21:06:49,481 | INFO | external | Функція start виконана успішно
+2026-11-09 21:06:49,481 | INFO | aiogram.event | Update id=442662701 is handled. Duration 202 ms by bot id=8912260409
+2026-11-09 21:07:00,243 | INFO | external | Виклик функції: film_create
+2026-11-09 21:07:00,243 | INFO | external | Користувач: do_llis | Повідомлення: Додати фільм
+2026-11-09 21:07:00,336 | INFO | external | Функція film_create виконана успішно
+2026-11-09 21:07:00,337 | INFO | aiogram.event | Update id=442662702 is handled. Duration 101 ms by bot id=8912260409
+2026-11-09 21:07:04,958 | INFO | aiogram.event | Update id=442662703 is handled. Duration 152 ms by bot id=8912260409
+2026-11-09 21:07:09,961 | INFO | aiogram.event | Update id=442662704 is handled. Duration 99 ms by bot id=8912260409
+2026-11-09 21:07:14,376 | INFO | aiogram.event | Update id=442662705 is handled. Duration 112 ms by bot id=8912260409
+2026-11-09 21:07:21,328 | INFO | aiogram.event | Update id=442662706 is handled. Duration 101 ms by bot id=8912260409
+2026-11-09 21:07:26,243 | INFO | aiogram.event | Update id=442662707 is handled. Duration 100 ms by bot id=8912260409
+2026-11-09 21:07:30,033 | INFO | aiogram.event | Update id=442662708 is handled. Duration 100 ms by bot id=8912260409
+2026-11-09 21:07:33,924 | INFO | aiogram.event | Update id=442662709 is handled. Duration 100 ms by bot id=8912260409
+2026-11-09 21:07:37,309 | INFO | external | Виклик функції: rate_movie
+2026-11-09 21:07:37,309 | INFO | external | Користувач: do_llis | Повідомлення: Оцінити фільм
+2026-11-09 21:07:37,417 | INFO | external | Функція rate_movie виконана успішно
+2026-11-09 21:07:37,418 | INFO | aiogram.event | Update id=442662710 is handled. Duration 114 ms by bot id=8912260409
+2026-11-09 21:07:41,815 | INFO | aiogram.event | Update id=442662711 is handled. Duration 210 ms by bot id=8912260409
+2026-11-09 21:07:44,778 | INFO | aiogram.event | Update id=442662712 is handled. Duration 192 ms by bot id=8912260409
+2026-11-09 21:07:47,750 | INFO | external | Виклик функції: search_movie
+2026-11-09 21:07:47,751 | INFO | external | Користувач: do_llis | Повідомлення: Знайти фільм
+2026-11-09 21:07:47,851 | INFO | external | Функція search_movie виконана успішно
+2026-11-09 21:07:47,851 | INFO | aiogram.event | Update id=442662713 is handled. Duration 102 ms by bot id=8912260409
+2026-11-09 21:07:57,504 | INFO | aiogram.event | Update id=442662714 is handled. Duration 2224 ms by bot id=8912260409
+2026-11-09 21:08:03,628 | INFO | external | Виклик функції: filter_movie
+2026-11-09 21:08:03,633 | INFO | external | Користувач: do_llis | Повідомлення: Фільтрувати
+2026-11-09 21:08:03,735 | INFO | external | Функція filter_movie виконана успішно
+2026-11-09 21:08:03,735 | INFO | aiogram.event | Update id=442662715 is handled. Duration 112 ms by bot id=8912260409
+2026-11-09 21:08:12,930 | INFO | aiogram.event | Update id=442662716 is handled. Duration 1581 ms by bot id=8912260409
+2026-11-09 21:08:16,664 | INFO | external | Виклик функції: recommend_movie
+2026-11-09 21:08:16,664 | INFO | external | Користувач: do_llis | Повідомлення: Рекомендація
+2026-11-09 21:08:17,414 | INFO | external | Функція recommend_movie виконана успішно
+2026-11-09 21:08:17,415 | INFO | aiogram.event | Update id=442662717 is handled. Duration 754 ms by bot id=8912260409
+2026-11-09 21:08:23,294 | INFO | external | Виклик функції: edit_movie
+2026-11-09 21:08:23,295 | INFO | external | Користувач: do_llis | Повідомлення: Редагувати фільм
+2026-11-09 21:08:23,447 | INFO | external | Функція edit_movie виконана успішно
+2026-11-09 21:08:23,448 | INFO | aiogram.event | Update id=442662718 is handled. Duration 157 ms by bot id=8912260409
+2026-11-09 21:08:31,355 | INFO | aiogram.event | Update id=442662719 is handled. Duration 106 ms by bot id=8912260409
+2026-11-09 21:08:39,369 | INFO | external | Користувач: do_llis | Повідомлення: крик
+2026-11-09 21:08:39,482 | INFO | aiogram.event | Update id=442662720 is handled. Duration 117 ms by bot id=8912260409
+2026-11-09 21:08:47,358 | INFO | external | Виклик функції: start
+2026-11-09 21:08:47,359 | INFO | external | Користувач: do_llis | Повідомлення: /start
+2026-11-09 21:08:47,449 | INFO | external | Функція start виконана успішно
+2026-11-09 21:08:47,450 | INFO | aiogram.event | Update id=442662721 is handled. Duration 91 ms by bot id=8912260409
+2026-11-09 21:08:52,171 | INFO | external | Виклик функції: edit_movie
+2026-11-09 21:08:52,173 | INFO | external | Користувач: do_llis | Повідомлення: Редагувати фільм
+2026-11-09 21:08:52,262 | INFO | external | Функція edit_movie виконана успішно
+2026-11-09 21:08:52,263 | INFO | aiogram.event | Update id=442662722 is handled. Duration 97 ms by bot id=8912260409
+2026-11-09 21:08:59,006 | INFO | aiogram.event | Update id=442662723 is handled. Duration 139 ms by bot id=8912260409
+2026-11-09 21:09:08,598 | INFO | aiogram.event | Update id=442662724 is handled. Duration 102 ms by bot id=8912260409
+2026-11-09 21:09:17,539 | INFO | external | Виклик функції: delete_movie
+2026-11-09 21:09:17,539 | INFO | external | Користувач: do_llis | Повідомлення: Видалити фільм
+2026-11-09 21:09:17,634 | INFO | external | Функція delete_movie виконана успішно
+2026-11-09 21:09:17,635 | INFO | aiogram.event | Update id=442662725 is handled. Duration 100 ms by bot id=8912260409
+2026-11-09 21:09:24,111 | INFO | aiogram.event | Update id=442662726 is handled. Duration 101 ms by bot id=8912260409
